@@ -1,0 +1,244 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+/*buat bagian navbar*/
+.fContainer{
+    display: flex;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+.brand:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    cursor:default;
+}
+.firstname{
+    color: #F273E6;
+    font-weight: 600;
+}
+.midname{
+    color: #C147E9;
+    font-weight: 600;
+
+}
+.lastname{
+    color: #A31ACB;
+    font-weight: 600;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.navigation li {
+    list-style-type: none;
+    padding: 15px;
+}
+.navigation li img {
+    width: 70px;
+    height: 70px;
+}
+.navigation li img:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+.navigation li a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navigation li a:hover{
+    color: #A31ACB;
+    transition: 0.3s ease-in-out;
+    font-size: 27px;
+}
+.active {
+    background-color: #A31ACB;
+    color: white;
+    padding: 15px;
+    border-radius: 23px;
+    font-weight: bold;
+}
+.active:hover {
+    color: white !important;
+}
+.teams{
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.teams h1{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin-top: 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+.teams h1 span{
+    color: #A31ACB;
+}
+.collage{
+    margin-top: 50px;
+    margin: auto;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.aboutus img{ 
+    width: 180px;
+    height: 180px;
+    margin-top: 40px;
+    margin-left: 60px;
+    border-radius: 25px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.foto{
+    background-color: #191919;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    border-radius: 25px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.foto:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+.card{
+    background-color: #191919;
+}
+.foto h1{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+a button {
+    position: relative;
+    background: #A31ACB;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 15px;
+    transition: 0.5s;
+    border-radius: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #fff;
+    margin-left: 90px;
+    margin-top: 14px;
+}
+a button:hover {
+    background: var(--clr);
+    color: white;
+    /* letter-spacing: 0.25e; */
+    box-shadow: 0 0 15px var(--clr);
+    cursor: pointer;
+}
+.foto7{
+    margin-left: 425px;
+}
+.foto1 .btn1{
+    background-color: #525E75;
+}
+.foto2 .btn1{
+    background-color: #876445;
+}
+.foto3 .btn1{
+    background-color: #C4DFAA;
+}
+.foto4 .btn1{
+    background-color: #6867AC;
+}
+.foto5 .btn1{
+    background-color: #AC7D88;
+}
+.foto6 .btn1{
+    background-color: #576F72;
+}
+.foto7 .btn1{
+    background-color: #F2D1D1;
+}
+footer {
+    position: absolute;
+    top: 1900px;
+    width: 100%;
+    height: 250px;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p span {
+    color: #A31ACB;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social {
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: #A31ACB;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
